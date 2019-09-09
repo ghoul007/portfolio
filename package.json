@@ -11,9 +11,9 @@
         "build:html": "html-minifier --collapse-whitespace --remove-redundant-attributes -o dist/index.html src/index.html",
         "build:css": "npm run scss && csso dist/main.css -o dist/main.css",
         "build:js": "minify src/sw.js src/main.js --out-dir dist",
-        "images": "imagemin src/images/* --out-dir=dist/images",
+        "images": "npx imagemin src/images/* --out-dir=dist/images",
         "predist": "rm -rf dist && mkdir -p dist",
-        "dist": "cp -t dist src/CNAME src/favicon.png src/index.html src/main.js src/sw.js && npm run images",
+        "dist": "cp -t dist src/CNAME src/favicon.png src/index.html src/main.js src/sw.js",
         "build": "npm run dist && npm run build:html && npm run build:css && npm run build:js",
         "post:install": "npm rebuild jpegtran-bin"
     },
