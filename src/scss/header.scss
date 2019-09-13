@@ -19,13 +19,13 @@
   height: 100%;
 
   &-a {
-    background-color: #2b32b2;
+    background-color:  #3c89cb;
     transform: skewY(10deg);
     transform-origin: 100%;
   }
 
   &-b {
-    background-image: linear-gradient(135deg, $color-accent, #2b32b2);
+    background-image: linear-gradient(135deg,#fff , #fff);
     transform: skewY(-10deg);
     transform-origin: 0;
   }
@@ -46,13 +46,14 @@
 
 .header-title {
   font-size: 2.2em;
-
+	color: #1f2936;
   @include breakpoint-smallest {
     font-size: 2em;
   }
 }
 
 .header-subtitle {
+    color: #2b72b0;
   margin-top: 12px;
   margin-bottom: 24px;
   font-size: 1.2em;
